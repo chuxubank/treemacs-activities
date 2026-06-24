@@ -37,8 +37,8 @@ Run tests:
 ```sh
 emacs --batch \
   --eval "(progn (require 'package) (package-initialize))" \
-  -L . -L test \
-  -l test/treemacs-activities-test.el \
+  -L . \
+  -l treemacs-activities-test.el \
   -f ert-run-tests-batch-and-exit
 ```
 
@@ -48,7 +48,7 @@ Byte-compile:
 emacs --batch \
   --eval "(progn (require 'package) (package-initialize))" \
   -L . \
-  -f batch-byte-compile treemacs-activities.el test/treemacs-activities-test.el
+  -f batch-byte-compile treemacs-activities.el treemacs-activities-test.el
 ```
 
 ## License
